@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#240b19">
+  <meta name="description" content="A little digital universe made with love by Couti, just for Tayson.">
+  <title>TAYSON.exe ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <div id="cursor"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="TAYSON.exe home" id="homeLink">
+      <span class="brand-icon">♥</span> TAYSON<span class="brand-dot">.exe</span>
+    </a>
+    <div class="topbar-right">
+      <span class="status"><span class="status-dot"></span> LOVE SYSTEM ONLINE</span>
+      <button class="icon-btn music-btn" id="musicToggle" aria-label="Toggle music">♫</button>
+    </div>
+  </header>
+
+  <div class="progress-track" id="progressTrack">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <main>
+    <!-- SCENE 1: SECRET MISSION -->
+    <section class="scene active intro" id="scene-0">
+      <div class="intro-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A PRIVATE LITTLE UNIVERSE <span class="eyebrow-line"></span></div>
+
+        <div class="hero-heart" aria-hidden="true">
+          <div class="heart-glow"></div>
+          <div class="pixel-heart">♥</div>
+          <span class="orbit orbit-one">✦</span>
+          <span class="orbit orbit-two">♡</span>
+          <span class="orbit orbit-three">✧</span>
+        </div>
+
+        <h1 class="hero-title">TAYSON<span>.exe</span></h1>
+        <p class="hero-subtitle">Welcome to a little world<br>made just for you <span class="pink">♡</span></p>
+        <p class="hero-description">One girl. One boy.<br>A thousand memories.</p>
+
+        <div class="loading-area">
+          <div class="loading-label">
+            <span>LOADING FEELINGS...</span>
+            <span>100%</span>
+          </div>
+          <div class="loading-bar"><div class="loading-fill"></div></div>
+          <div class="loading-heart">♥ ♥ ♥</div>
+        </div>
+
+        <button class="primary-btn start-btn" id="startBtn">
+          <span>START OUR STORY</span><span>→</span>
+        </button>
+        <p class="created-by">Created with love by <strong>Couti</strong>.</p>
+      </div>
+      <span class="corner-code">BUILD_001 / ONLY_FOR_TAYSON</span>
+    </section>
+
+    <!-- SCENE 2: OUR LITTLE UNIVERSE -->
+    <section class="scene universe" id="scene-1">
+      <div class="section-inner">
+        <div class="eyebrow">01 / OUR LITTLE UNIVERSE</div>
+        <h2 class="section-title">You're my favorite<br><em>kind of magic.</em></h2>
+        <p class="section-description">Ya Tayson, aandek fikra 9adeh enti special aandii? ❤️</p>
+
+        <div class="memory-intro">
+          <span class="tiny-star">✳</span>
+          <span>A LITTLE COLLECTION OF US</span>
+          <span class="tiny-star">✳</span>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <button class="polaroid p1" data-photo="0" aria-label="Open memory one">
+            <span class="photo-frame"><img src="./WhatsApp Image 2026-11-05 at 21.20.39 (1).jpeg" alt="Our first memory" loading="lazy"><span class="photo-placeholder">♡</span></span>
+            <span class="photo-caption">My favorite view.</span>
+            <span class="photo-number">MEMORY_001</span>
+          </button>
+
+          <button class="polaroid p2" data-photo="1" aria-label="Open memory two">
+            <span class="photo-frame"><img src="./WhatsApp Image 2026-11-05 at 21.20.39 (2).jpeg" alt="A beautiful moment" loading="lazy"><span class="photo-placeholder">✦</span></span>
+            <span class="photo-caption">Hedhi men ahla moments.</span>
+            <span class="photo-number">MEMORY_002</span>
+          </button>
+
+          <button class="polaroid p3" data-photo="2" aria-label="Open memory three">
+            <span class="photo-frame"><img src="./WhatsApp Image 2026-11-05 at 21.20.39 (3).jpeg" alt="A happy memory" loading="lazy"><span class="photo-placeholder">♡</span></span>
+            <span class="photo-caption">Just you being you.</span>
+            <span class="photo-number">MEMORY_003</span>
+          </button>
+
+          <button class="polaroid p4" data-photo="3" aria-label="Open memory four">
+            <span class="photo-frame"><img src="./WhatsApp Image 2026-11-05 at 21.20.39.jpeg" alt="Our special moment" loading="lazy"><span class="photo-placeholder">✧</span></span>
+            <span class="photo-caption">And many more to come.</span>
+            <span class="photo-number">MEMORY_004</span>
+          </button>
+        </div>
+
+        <p class="gallery-hint">↗ Tap a memory. Trust me, it's worth it.</p>
+
+        <div class="secret-note">
+          <span>♡</span>
+          <p>PS: Ken tenzel 3al 9loub sghar, fama surprises...</p>
+        </div>
+
+        <button class="primary-btn next-btn" data-next="2">
+          <span>CONTINUE THE STORY</span><span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SCENE 3: LOVE QUIZ -->
+    <section class="scene quiz-scene" id="scene-2">
+      <div class="section-inner narrow">
+        <div class="eyebrow">02 / THE COUTI TEST</div>
+        <div class="quiz-icon">👀</div>
+        <h2 class="section-title">9adeh taaref <em>Couti?</em></h2>
+        <p class="section-description">Let's see if you've been paying attention, madame. 😌</p>
+
+        <div class="quiz-card">
+          <div class="quiz-top">
+            <span id="questionCounter">QUESTION 01 / 05</span>
+            <span id="scoreCounter">SCORE: 0</span>
+          </div>
+          <div class="quiz-progress"><div id="quizProgress"></div></div>
+          <h3 id="questionText">Chnowa akther haja n7ebha fik?</h3>
+          <div id="answers" class="answers"></div>
+          <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+          <button id="quizNext" class="primary-btn quiz-next" disabled>
+            <span>NEXT QUESTION</span><span>→</span>
+          </button>
+        </div>
+
+        <div id="quizResult" class="quiz-result hidden">
+          <div class="result-heart">♥</div>
+          <p class="eyebrow">MISSION COMPLETE</p>
+          <h3 id="resultTitle">You're a professional Couti expert.</h3>
+          <p id="resultMessage"></p>
+          <button class="primary-btn" id="restartQuiz">PLAY AGAIN ↻</button>
+        </div>
+
+        <p class="quiz-disclaimer">Don't worry, there are no wrong answers in love. Well... almost. 🤭</p>
+        <button class="text-btn back-next" data-next="3">SKIP TO THE LOVE LETTER →</button>
+      </div>
+    </section>
+
+    <!-- SCENE 4: LOVE LETTER -->
+    <section class="scene letter-scene" id="scene-3">
+      <div class="section-inner narrow">
+        <div class="eyebrow">03 / SOMETHING FROM MY HEART</div>
+        <h2 class="section-title">A little letter,<br><em>just for you.</em></h2>
+        <p class="section-description">Mouch message normal... open it. ♡</p>
+
+        <button class="envelope" id="envelope" aria-label="Open your love letter">
+          <div class="envelope-back"></div>
+          <div class="letter-paper">
+            <div class="letter-stamp">TO: TAYSON ♡</div>
+            <div class="letter-preview">With love,<br>your Couti.</div>
+          </div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-heart">♥</div>
+        </button>
+
+        <p class="envelope-hint" id="envelopeHint">TAP THE ENVELOPE TO OPEN ♡</p>
+
+        <div class="letter-message hidden" id="letterMessage">
+          <div class="letter-header">
+            <span>PRIVATE MESSAGE</span>
+            <span>♡ 001</span>
+          </div>
+          <p id="typedLetter"></p>
+          <div class="letter-signature">Forever yours,<br><em>Couti ♥</em></div>
+        </div>
+
+        <button class="primary-btn next-btn letter-next" data-next="4">
+          <span>ONE LAST THING...</span><span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SCENE 5: FINAL QUESTION -->
+    <section class="scene finale" id="scene-4">
+      <div class="finale-content">
+        <div class="eyebrow">04 / THE MOST IMPORTANT QUESTION</div>
+        <div class="finale-heart" aria-hidden="true">
+          <div class="finale-heart-glow"></div>
+          <span>♥</span>
+        </div>
+        <p class="finale-intro">Okay Tayson...<br>I have one last question.</p>
+        <h2>Ya Tayson,<br><em>t7eb tokhrej m3a Couti</em><br>fi date romantique? ❤️</h2>
+        <p class="finale-small">No pressure. Just two hearts and a little adventure.</p>
+
+        <div class="proposal-buttons" id="proposalButtons">
+          <button class="yes-btn" id="yesBtn">EY BEHI! ❤️</button>
+          <button class="maybe-btn" id="maybeBtn">Nfakker chwaya 🙈</button>
+        </div>
+
+        <p class="maybe-message hidden" id="maybeMessage" aria-live="polite">
+          Take your time ya Tayson,<br>Couti yestanna fik ❤️
+        </p>
+
+        <div class="success-message hidden" id="successMessage">
+          <div class="success-heart">♥</div>
+          <h3>YEEEEES!!! ❤️</h3>
+          <p>Couti taw walla as3ed we7ed fel denya!</p>
+          <p class="date-confirmed">Date confirmed... just us two. ✨</p>
+          <span class="success-signature">— Your very happy Couti.</span>
+        </div>
+
+        <p class="finale-footnote">Whatever your answer, you're already special to me. ♡</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>MADE WITH 100% LOVE BY COUTI</span>
+    <span>TAYSON.EXE © 2026 <span class="pink">♥</span></span>
+  </footer>
+
+  <!-- PHOTO LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="Selected memory">
+    <p id="lightboxCaption"></p>
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+  </div>
+
+  <!-- SURPRISE HEART MESSAGE -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Optional background audio. Add your own royalty-free MP3 file. -->
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="./Balqees - Entaha (Official Music Video)  بلقيس - انتهى.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="confetti" aria-hidden="true"></div>
+</body>
+</html>
